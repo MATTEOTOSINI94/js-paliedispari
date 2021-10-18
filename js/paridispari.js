@@ -28,7 +28,7 @@ function pariodispari(pod) {
     console.log(result)
     
     if (isNaN(userNumero) || userNumero > 5) {
-        alert("fermati uagliu")
+        alert("non hai inserito o non hai seguito le indicazioni")
         return 0  
     }
 
