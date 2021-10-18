@@ -42,21 +42,4 @@ function pariodispari(pod) {
     
 }
 
-// const btnPari = document.getElementById("bottone-pari")
-// const btnDispari = document.getElementById("bottone-dispari")
-
-// function pariodispari(pod) {
-//     const utentescelta = prompt("inserisci un numero")
-//     const pcnumero1 = Math.round(Math.random()*4)+1
-//     const risultato = utentescelta + pcnumero1
-
-//     if (risultato % 2 === 0 && pod === "pari") {
-//         alert("l'utente ha vinto")
-        
-//     }
-
-//     else if(risultato % 2 !== 0 && pod === "dispari"){
-//         alert("hai vinto")
-//     }
-    
-// }
+console.log(pariodispari)

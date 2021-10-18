@@ -3,20 +3,43 @@
 // come faccio a capire se una parola è palindroma ?
 // trovo un modo per invertire la parola
 // una volta inverita la metto a paragone con la parola non invertità
-const parolaUser = prompt("inserire parola")
+// const parolaUser = prompt("inserire parola")
+// const parolaUser = prompt("inserire parola");
+// function reverse(parolaReverse){
+//     return parolaReverse.split("").reverse().join("");
+// }
 
-function reverse(parolaReverse){
-    return parolaReverse.split("").reverse().join("");
+// let parolaMod = reverse(parolaUser)
+
+// console.log(parolaMod)
+// console.log(parolaUser)
+
+// if (parolaUser === parolaMod) {
+//     alert("well done la parola è un palindroma")
+// }
+// else{
+// alert("non è un palindroma")
+// }
+
+
+const parolaUser = prompt("inserire parola");
+
+function contrario(parolaReverse){
+
+    const parola = parolaReverse
+    const parolaRev = parola.split("").reverse().join("");
+
+    if (parolaReverse === parolaRev) {
+        alert("well done la parola è un palindroma")
+    }
+    else{
+    alert("non è un palindroma")
+    }
+
 }
 
-let parolaMod = reverse(parolaUser)
+contrario(parolaUser)
 
-console.log(parolaMod)
+
 console.log(parolaUser)
 
-if (parolaUser === parolaMod) {
-    alert("well done la parola è un palindroma")
-}
-else{
-alert("non è un palindroma")
-}
