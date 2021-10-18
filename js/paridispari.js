@@ -7,3 +7,56 @@
 
 // facciamo scegliere all'utente pari o dispari e il computer di conseguenza avrà l'altro risultato
 
+// scegli un numero pari o dispari in base a quello 
+
+const btnPari = document.getElementById("bottone-pari")
+const btnDispari = document.getElementById("bottone-dispari")
+
+btnPari.addEventListener("click",function(){
+    pariodispari("pari")
+})
+
+btnDispari.addEventListener("click",function(){
+    pariodispari("dispari")
+})
+
+
+function pariodispari(pod) {
+    const userNumero = prompt("Inserisci un numero da 1 a 5")
+    const pcNumber = Math.round(Math.random()*4)+1
+    const result = parseInt(userNumero) + parseInt(pcNumber)
+    console.log(result)
+
+
+    if (result % 2 === 0 && pod === "pari") {
+        alert(`Il risultato è ${result} l'utente vince`)
+        
+    }
+    else if (result % 2 !== 0 && pod === "dispari") {
+        alert(`Il risultato è ${result} l'utente vince`)
+        
+    }
+    else{
+        alert(`Il risultato è ${result} l'utente perde`)
+    }
+    
+}
+
+// const btnPari = document.getElementById("bottone-pari")
+// const btnDispari = document.getElementById("bottone-dispari")
+
+// function pariodispari(pod) {
+//     const utentescelta = prompt("inserisci un numero")
+//     const pcnumero1 = Math.round(Math.random()*4)+1
+//     const risultato = utentescelta + pcnumero1
+
+//     if (risultato % 2 === 0 && pod === "pari") {
+//         alert("l'utente ha vinto")
+        
+//     }
+
+//     else if(risultato % 2 !== 0 && pod === "dispari"){
+//         alert("hai vinto")
+//     }
+    
+// }
