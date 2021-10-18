@@ -4,6 +4,10 @@
 // trovo un modo per invertire la parola
 // una volta inverita la metto a paragone con la parola non invertità
 // const parolaUser = prompt("inserire parola")
+
+
+
+
 // const parolaUser = prompt("inserire parola");
 // function reverse(parolaReverse){
 //     return parolaReverse.split("").reverse().join("");
@@ -42,4 +46,16 @@ contrario(parolaUser)
 
 
 console.log(parolaUser)
+
+
+
+
+function somma(num1,num2) {
+    const sommaFun = num1 + num2
+    console.log(sommaFun)
+    
+}
+
+somma(30,20)
+
 

@@ -26,9 +26,13 @@ function pariodispari(pod) {
     const pcNumber = Math.round(Math.random()*4)+1
     const result = parseInt(userNumero) + parseInt(pcNumber)
     console.log(result)
+    
+    if (isNaN(userNumero) || userNumero > 5) {
+        alert("fermati uagliu")
+        return 0  
+    }
 
-
-    if (result % 2 === 0 && pod === "pari") {
+    else if (result % 2 === 0 && pod === "pari") {
         alert(`Il risultato è ${result} l'utente vince`)
         
     }
